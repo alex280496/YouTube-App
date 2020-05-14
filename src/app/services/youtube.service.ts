@@ -24,6 +24,8 @@ export class YoutubeService {
         .set('maxResults','10')
         .set('playlistId',this.playlist)
         .set('key',this.apikey)
+        .set('pageToken',this.nextPageToken)
+
         //https://www.googleapis.com/youtube/v3/playlistItems?part=snippet
         //&key=AIzaSyD7nZHI5rJ3scfwqeTw78GQaQhmt1KOhIY&playlistId=UUuaPTYj15JSkETGnEseaFFg
        // &maxResults=10
